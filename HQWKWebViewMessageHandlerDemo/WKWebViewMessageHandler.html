@@ -8,7 +8,7 @@
             function shareClick() {
                 window.webkit.messageHandlers.Share.postMessage({title:'测试分享的标题',content:'测试分享的内容',url:'https://github.com/HanQiGod'});
             }
-            
+             
             //分享回调结果显示
             function shareResult(channel_id,share_channel,share_url) {
                 var content = channel_id+","+share_channel+","+share_url;
