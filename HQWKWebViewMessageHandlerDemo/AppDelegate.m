@@ -1,12 +1,15 @@
 //
 //  AppDelegate.m
-//  HQWKWebViewMessageHandlerDemo
+//  WKWebViewMessageHandlerDemo
 //
-//  Created by 君凯商联网 on 2018/9/11.
-//  Copyright © 2018年 君凯商联网. All rights reserved.
+//  Created by Mr_Han on 18/9/11.
+//  Copyright © 2018年 Mr_Han. All rights reserved.
+//  CSDN <https://blog.csdn.net/u010960265>
+//  GitHub <https://github.com/HanQiGod>
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +17,14 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ViewController *vc = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

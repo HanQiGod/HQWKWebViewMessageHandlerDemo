@@ -1,13 +1,16 @@
 //
 //  ViewController.m
-//  HQWKWebViewMessageHandlerDemo
+//  WKWebViewMessageHandlerDemo
 //
-//  Created by 君凯商联网 on 2018/9/11.
-//  Copyright © 2018年 君凯商联网. All rights reserved.
+//  Created by Mr_Han on 18/9/11.
+//  Copyright © 2018年 Mr_Han. All rights reserved.
+//  CSDN <https://blog.csdn.net/u010960265>
+//  GitHub <https://github.com/HanQiGod>
 //
 
 #import "ViewController.h"
-
+#import <WebKit/WebKit.h>
+#import "WKWebViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +19,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(30, 100, 250, 30);
+    button.backgroundColor = [UIColor cyanColor];
+    [button setTitle:@"WKWebViewMessageHandler" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+}
+
+- (void)buttonAction:(id)sender
+{
+    WKWebViewController *webController = [[WKWebViewController alloc] init];
+    [self.navigationController pushViewController:webController animated:YES];
 }
 
 

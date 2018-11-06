@@ -15,6 +15,8 @@
 		7A6E9BE921476C5200497B80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E9BE821476C5200497B80 /* main.m */; };
 		7A6E9BF321476C5200497B80 /* HQWKWebViewMessageHandlerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E9BF221476C5200497B80 /* HQWKWebViewMessageHandlerDemoTests.m */; };
 		7A6E9BFE21476C5200497B80 /* HQWKWebViewMessageHandlerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E9BFD21476C5200497B80 /* HQWKWebViewMessageHandlerDemoUITests.m */; };
+		7A6E9C0E21476CB200497B80 /* WKWebViewMessageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E9C0B21476CB100497B80 /* WKWebViewMessageHandler.html */; };
+		7A6E9C0F21476CB200497B80 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E9C0C21476CB100497B80 /* WKWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		7A6E9BF921476C5200497B80 /* HQWKWebViewMessageHandlerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HQWKWebViewMessageHandlerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6E9BFD21476C5200497B80 /* HQWKWebViewMessageHandlerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQWKWebViewMessageHandlerDemoUITests.m; sourceTree = "<group>"; };
 		7A6E9BFF21476C5200497B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A6E9C0B21476CB100497B80 /* WKWebViewMessageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewMessageHandler.html; sourceTree = "<group>"; };
+		7A6E9C0C21476CB100497B80 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		7A6E9C0D21476CB200497B80 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,9 @@
 		7A6E9BD821476C5100497B80 /* HQWKWebViewMessageHandlerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7A6E9C0B21476CB100497B80 /* WKWebViewMessageHandler.html */,
+				7A6E9C0D21476CB200497B80 /* WKWebViewController.h */,
+				7A6E9C0C21476CB100497B80 /* WKWebViewController.m */,
 				7A6E9BD921476C5100497B80 /* AppDelegate.h */,
 				7A6E9BDA21476C5100497B80 /* AppDelegate.m */,
 				7A6E9BDC21476C5100497B80 /* ViewController.h */,
@@ -236,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6E9BE621476C5200497B80 /* LaunchScreen.storyboard in Resources */,
+				7A6E9C0E21476CB200497B80 /* WKWebViewMessageHandler.html in Resources */,
 				7A6E9BE321476C5200497B80 /* Assets.xcassets in Resources */,
 				7A6E9BE121476C5100497B80 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +274,7 @@
 				7A6E9BDE21476C5100497B80 /* ViewController.m in Sources */,
 				7A6E9BE921476C5200497B80 /* main.m in Sources */,
 				7A6E9BDB21476C5100497B80 /* AppDelegate.m in Sources */,
+				7A6E9C0F21476CB200497B80 /* WKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

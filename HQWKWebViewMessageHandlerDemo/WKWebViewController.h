@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WKWebViewController.h
 //  WKWebViewMessageHandlerDemo
 //
 //  Created by Mr_Han on 18/9/11.
@@ -10,8 +10,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WKWebViewController : UIViewController
 
 @end
-
